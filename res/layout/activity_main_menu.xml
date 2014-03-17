@@ -8,9 +8,53 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainMenuActivity" >
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/buttonMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonRecherche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Recherche" />
+
+    <Button
+        android:id="@+id/buttonDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="Entrer une destination" />
+
+    <Button
+        android:id="@+id/buttonCarte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonDestination"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Voir la carte" />
+
+    <Button
+        android:id="@+id/buttonQrCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonCarte"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Flasher un QrCode" />
 
 </RelativeLayout>
